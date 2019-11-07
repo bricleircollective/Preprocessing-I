@@ -169,7 +169,7 @@ h3 {
 .container .intro .intro-top {
   flex-direction: column;
   width: 60%;
-  line-height: 2em;
+  line-height: 1.5em;
 }
 .container .intro .intro-top #profile-pic {
   width: 80%;
@@ -181,11 +181,19 @@ h3 {
   padding: 1%;
   font-size: 1.5rem;
 }
+.container .intro .intro-top .profile-info h1,
+.container .intro .intro-top .profile-info h2 {
+  font-weight: bold;
+}
+.container .intro .intro-top .profile-info ul {
+  list-style: square;
+}
 .container .intro .intro-bottom {
   flex-direction: column;
   width: 60%;
-  line-height: 2em;
+  line-height: 1.5em;
   font-size: 1.5rem;
+  margin-top: 18%;
 }
 .container .intro .intro-bottom .profile-bottom-info {
   display: flex;
@@ -193,6 +201,13 @@ h3 {
   margin: auto;
   padding: 1%;
   width: 100%;
+}
+.container .intro .intro-bottom .profile-bottom-info h1,
+.container .intro .intro-bottom .profile-bottom-info h2 {
+  font-weight: bold;
+}
+.container .intro .intro-bottom .profile-bottom-info ul {
+  list-style: square;
 }
 .container .intro .intro-bottom .profile-bottom-info .contact-button {
   width: 26%;
@@ -203,7 +218,7 @@ h3 {
 .container .work-history {
   display: flex;
   margin: auto;
-  padding: 7%;
+  padding: 1%;
   border-top: 2px solid #3b5998;
 }
 .container .work-history .work-history-image {
@@ -219,6 +234,21 @@ h3 {
   margin: 4%;
   font-size: 1.4rem;
 }
+.container .work-history .work-history-info table {
+  border: 2px solid #3b5998;
+}
+.container .work-history .work-history-info table tr,
+.container .work-history .work-history-info table th,
+.container .work-history .work-history-info table td {
+  border: 1px solid #3b5998;
+}
+.container .work-history .work-history-info h1,
+.container .work-history .work-history-info h2 {
+  font-weight: bold;
+}
+.container .work-history .work-history-info ul {
+  list-style: square;
+}
 .container .contact {
   display: flex;
   flex-direction: column;
@@ -230,6 +260,10 @@ h3 {
   font-size: 1.5rem;
   margin: 0 auto;
   padding: 2%;
+}
+.container .contact .contact-left h1,
+.container .contact .contact-left h2 {
+  font-weight: bold;
 }
 @font-face {
   font-family: 'Roboto';
@@ -325,7 +359,7 @@ h3 {
   font-size: 15px;
 }
 .container .contact #contact-form button[type="submit"]:hover {
-  background: #43A047;
+  background: orange;
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;

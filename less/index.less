@@ -57,7 +57,7 @@ table {
 @font-family: Tahoma;
 @primary-color: #3b5998;
 @secondary-color: #20B22A;
-@line-height: 1em + 1em;
+@line-height: 1.5em;
 
 // Mixins
 .contact-button (){
@@ -121,6 +121,14 @@ h1, h2, h3 {
 				margin: 2%;
 				padding: 1%;
 				font-size: 1.5rem;
+
+				h1, h2 {
+					font-weight: bold;
+				}
+
+				ul {
+					list-style: square;
+				}
 			}
 		}
 		.intro-bottom {
@@ -128,6 +136,7 @@ h1, h2, h3 {
 			width: 60%;
 			line-height: @line-height;
 			font-size: 1.5rem;
+			margin-top: 18%;
 		
 
 			.profile-bottom-info {
@@ -136,6 +145,14 @@ h1, h2, h3 {
 				margin: auto;
 				padding: 1%;
 				width: 100%;
+
+				h1, h2 {
+					font-weight: bold;
+				}
+
+				ul {
+					list-style: square;
+				}
 
 				.contact-button {
 					width: 26%;
@@ -150,7 +167,7 @@ h1, h2, h3 {
 	.work-history {
 		display: flex;
 		margin: auto;
-		padding: 7%;
+		padding: 1%;
 		border-top: 2px solid @primary-color;
 
 		.work-history-image {
@@ -165,6 +182,21 @@ h1, h2, h3 {
 			font-style: .skill-font();
 			margin: 4%;
 			font-size: 1.4rem;
+
+			table {
+				border: 2px solid @primary-color;
+
+				tr, th, td {
+					border: 1px solid @primary-color;
+				}
+			}
+			h1, h2 {
+				font-weight: bold;
+			}
+
+			ul {
+				list-style: square;
+			}
 		}
 	}
 	
@@ -179,6 +211,10 @@ h1, h2, h3 {
 			font-size: 1.5rem;
 			margin: 0 auto;
 			padding: 2%;
+
+			h1, h2 {
+				font-weight: bold;
+			}
 		}
 		@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
 
@@ -268,7 +304,7 @@ h1, h2, h3 {
 		}
 
 		#contact-form button[type="submit"]:hover {
-		background: #43A047;
+		background: orange;
 		-webkit-transition: background 0.3s ease-in-out;
 		-moz-transition: background 0.3s ease-in-out;
 		transition: background-color 0.3s ease-in-out;
