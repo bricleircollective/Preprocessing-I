@@ -52,8 +52,97 @@ table {
 * {
     box-sizing: border-box;
 }
+// Variables
+@background-color: #f4f4f4;
+@font-family: Tahoma;
+@primary-color: #3b5998;
+@secondary-color: #20B22A;
+@line-height: 1em + 1em;
+
+// Mixins
+.contact-button (){
+	display: flex;
+	color: white;
+	background-color: red;
+}
+
+.skill-font (){
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 html, body {
 	height: 100%;
-	font-size: 62.5%
+	background-color: @background-color;
+}
+h1, h2, h3 {
+	padding: 2%;
+}
+.container {
+	width: 80%;
+	margin: 10%;
+	color: @primary-color;
+	border: 2px dashed @secondary-color;
+
+	.links {
+		display: flex;
+		justify-content: space-evenly;
+		margin: 2% auto;
+		padding: 3%;
+		background-color: @primary-color;
+
+		a {
+			color: white;
+			text-decoration: none;
+		}
+	}
+
+	.intro {
+		display: flex;
+		margin: auto;
+		width: 75%;
+
+		.intro-top {
+			flex-direction: column;
+			width: 100%;
+			line-height: @line-height;
+			border: 2px dashed @secondary-color;
+
+			#profile-pic {
+				width: 80%;
+				margin: 1%;
+				padding: 5%;
+			}
+			.profile-info {
+				display: flex;
+				margin: 2%;
+				padding: 1%;
+				font-size: 1.5rem;
+			}
+		}
+		.intro-bottom {
+			flex-direction: column;
+			width: 100%;
+			line-height: @line-height;
+			border: 2px dashed @secondary-color;
+
+			.profile-bottom-info {
+				display: flex;
+				flex-direction: column;
+				margin: 15%;
+				padding: 15%;
+				width: 73%;
+
+				.contact-button {
+					width: 90%;
+					justify-content: center;
+				}
+			}
+		}
+		.work-history {
+			flex-direction: column;
+			width: 100%;
+			line-height: @line-height;
+			border: 2px dashed @secondary-color;
+		}
+	}
 }

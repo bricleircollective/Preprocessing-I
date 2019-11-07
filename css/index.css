@@ -133,5 +133,72 @@ table {
 html,
 body {
   height: 100%;
-  font-size: 62.5%;
+  background-color: #f4f4f4;
+}
+h1,
+h2,
+h3 {
+  padding: 2%;
+}
+.container {
+  width: 80%;
+  margin: 10%;
+  color: #3b5998;
+  border: 2px dashed #20B22A;
+}
+.container .links {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2% auto;
+  padding: 3%;
+  background-color: #3b5998;
+}
+.container .links a {
+  color: white;
+  text-decoration: none;
+}
+.container .intro {
+  display: flex;
+  margin: auto;
+  width: 75%;
+}
+.container .intro .intro-top {
+  flex-direction: column;
+  width: 100%;
+  line-height: 2em;
+  border: 2px dashed #20B22A;
+}
+.container .intro .intro-top #profile-pic {
+  width: 80%;
+  margin: 1%;
+  padding: 5%;
+}
+.container .intro .intro-top .profile-info {
+  display: flex;
+  margin: 2%;
+  padding: 1%;
+  font-size: 1.5rem;
+}
+.container .intro .intro-bottom {
+  flex-direction: column;
+  width: 100%;
+  line-height: 2em;
+  border: 2px dashed #20B22A;
+}
+.container .intro .intro-bottom .profile-bottom-info {
+  display: flex;
+  flex-direction: column;
+  margin: 15%;
+  padding: 15%;
+  width: 73%;
+}
+.container .intro .intro-bottom .profile-bottom-info .contact-button {
+  width: 90%;
+  justify-content: center;
+}
+.container .intro .work-history {
+  flex-direction: column;
+  width: 100%;
+  line-height: 2em;
+  border: 2px dashed #20B22A;
 }
