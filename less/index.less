@@ -138,11 +138,20 @@ h1, h2, h3 {
 				}
 			}
 		}
-		.work-history {
-			flex-direction: column;
-			width: 100%;
-			line-height: @line-height;
-			border: 2px dashed @secondary-color;
+	}
+
+	.work-history {
+		display: flex;
+		flex-direction: column;
+		margin: auto;
+		width: 75%;
+
+		.work-history-image {
+		
+		}
+		.work-history-info {
+			text-align: left;
+			font-style: .skill-font()
 		}
 	}
 }

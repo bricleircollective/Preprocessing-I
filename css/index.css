@@ -196,9 +196,13 @@ h3 {
   width: 90%;
   justify-content: center;
 }
-.container .intro .work-history {
+.container .work-history {
+  display: flex;
   flex-direction: column;
-  width: 100%;
-  line-height: 2em;
-  border: 2px dashed #20B22A;
+  margin: auto;
+  width: 75%;
+}
+.container .work-history .work-history-info {
+  text-align: left;
+  font-style: [object Object];
 }
