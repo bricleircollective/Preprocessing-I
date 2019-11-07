@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
 
-  <title>My Resume</title>
-
+  <title>Eian Carter | Resume</title>
+  <meta name="viewport" content-width=device-width, initial-scale=1, user-scalable="no">
   <link rel="stylesheet" href="css/index.css">
 
   <!--[if lt IE 9]>
@@ -14,12 +14,69 @@
 </head>
 
 <body>
-  <nav>
-    <a href="#" alt=""></a>
-    <a href="#" alt=""></a>
-    <a href="#" alt=""></a>
-    <a href="#" alt=""></a>
-  </nav>
-  <h1>My Resume</h1>
+  <div class="container">
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about" alt="">About</a>
+      <a href="#portfolio" alt="">Portfolio</a>
+      <a href="#contact" alt="">Contact</a>
+    </nav>
+    <div class="intro-history">
+      
+      <section class="intro">
+        <section class="intro-top">
+          <img id="profile-pic" src="images/pic01.jpg"  alt="Picture of Eian Carter">
+          <h1>Eian Carter | Software Engineer</h1>
+          <h2>Full Stack HTML, CSS, JS, Java, Python & SQL</h2>
+        </section>
+        
+        <section class="intro-bottom">
+          <h2>Available for freelance web development and start up partnerships</h2>
+          <button class="contact-button">Lets Team Up</button>
+        </section>
+      </section>
+      
+      <section class="work-history">
+        <a href="#" class="image"><img src="images/pic01.jpeg" alt="Picture of Office"></a>
+        <h2>Professional Experience</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem iste maiores, minima doloremque, id omnis quaerat explicabo tempora impedit vel est sequi voluptatem eius error a expedita facilis! Earum, ipsam!</p>
+        <h2>Skills & Education</h2>
+          <ul>
+            <li>HTML, CSS, JavaScript, Node</li>
+            <li>React, Python, Express, SQL</li>
+            <li>Machine Learning, Data Visualization</li>
+          </ul>
+      </section>
+    
+    <section class="contact">
+      <h2>Get in Touch</h2>
+      <p>(555) 555-5555 <br> eiancarter@gmail.com</p>
+      <form method="post" action="#">
+        <div class="fields">
+          <div class="field half">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div class="field half">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" />
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="5"></textarea>
+          </div>
+        </div>
+        <ul class="actions">
+          <li><a href="" class="button submit">Send Message</a></li>
+        </ul>
+      </form>
+    </section>
+  </div>  
+  <footer>
+    <a href="#">LinkedIn</a>
+    <a href="#">Instagram</a>
+    <a href="#">Github</a>
+  </footer>
+</div>  
 </body>
 </html>
