@@ -36,7 +36,7 @@
         <section class="intro-bottom">
           <div class="profile-bottom-info">
             <h2>Available for freelance web development and start up partnerships</h2>
-            <button class="contact-button">Lets Team Up</button>
+            <button href="#contact-form" class="contact-button">Lets Team Up</button>
           </div>
         </section>
       </section>
@@ -58,27 +58,34 @@
       </section>
     
     <section class="contact">
-      <h2>Get in Touch</h2>
-      <p>(555) 555-5555 <br> eiancarter@gmail.com</p>
-      <form method="post" action="#">
-        <div class="fields">
-          <div class="field half">
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" />
-          </div>
-          <div class="field half">
-            <label for="email">Email</label>
-            <input type="text" name="email" id="email" />
-          </div>
-          <div class="field">
-            <label for="message">Message</label>
-            <textarea name="message" id="message" rows="5"></textarea>
-          </div>
+      <div class="contact-left">
+        <h2>Get in Touch</h2>
+        <p>(555) 555-5555 <br> eiancarter@gmail.com</p>
+      </div>
+      <div class="container-form">  
+          <form id="contact-form" action="" method="post">
+            <h3>Need a Web Developer?</h3>
+            <h4>Fill out the form below for a quote</h4>
+            <fieldset>
+              <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+            </fieldset>
+            <fieldset>
+              <input placeholder="Your Email Address" type="email" tabindex="2" required>
+            </fieldset>
+            <fieldset>
+              <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+            </fieldset>
+            <fieldset>
+              <input placeholder="Your Web Site (optional)" type="url" tabindex="4" required>
+            </fieldset>
+            <fieldset>
+              <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+            </fieldset>
+            <fieldset>
+              <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            </fieldset>
+          </form>
         </div>
-        <ul class="actions">
-          <li><a href="" class="button submit">Send Message</a></li>
-        </ul>
-      </form>
     </section>
   </div>  
   <footer class="links">
