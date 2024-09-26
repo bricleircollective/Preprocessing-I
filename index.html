@@ -4,9 +4,10 @@
 <head>
   <meta charset="utf-8">
 
-  <title>My Resume</title>
-
+  <title>Eian Carter | Resume</title>
+  <meta name="viewport" content-width=device-width, initial-scale=1, user-scalable="no">
   <link rel="stylesheet" href="css/index.css">
+  <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap" rel="stylesheet">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -14,6 +15,110 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <div class="container">
+    <nav class="links">
+      <a href="#home">Home</a>
+      <a href="#about" alt="">About</a>
+      <a href="#portfolio" alt="">Portfolio</a>
+      <a href="#contact" alt="">Contact</a>
+    </nav>
+    <div class="intro-history">
+      
+      <section class="intro">
+        <section class="intro-top">
+          <img id="profile-pic" src="images/pic01.jpg"  alt="Picture of Eian Carter">
+          <div class="profile-info">
+            <h1>Eian Carter | Web Dev</h1>
+            <br>
+            <ul> 
+              <li>Full Stack HTML</li>
+              <li>CSS</li> 
+              <li>JS</li> 
+              <li>Java</li> 
+              <li>Python & SQL</li>
+            </ul>
+          </div>
+        </section>
+        
+        <section class="intro-bottom">
+          <div class="profile-bottom-info">
+            <h2>5 years full stack experience</h2>
+              <p>Available for freelance web development and start up partnerships</p>
+            <div class="contact-button">  
+              <button onclick='window.location.href = "https://bricleircollective.github.io";''>View Portfolio</button>
+            </div>
+          </div>
+        </section>
+      </section>
+      
+      <section class="work-history">
+        <div class="work-history-image">
+          <a href="#" class="image"><img src="images/pic02.jpg" alt="Picture of Office"></a>
+        </div>
+        <div class="work-history-info">
+          <h2>Professional Experience</h2>
+            <table style="width:100%">
+                <tr>
+                  <th>Company</th>
+                  <th>Job Title</th>
+                  <th>Years</th>
+                </tr>
+                <tr>
+                  <td>Apple</td>
+                  <td>Sr. SE</td>
+                  <td>2009-2012</td>
+                </tr>
+                <tr>
+                  <td>Tesla</td>
+                  <td>SE</td>
+                  <td>2006-2009</td>
+                </tr>
+              </table>
+          <h2>Skills & Education</h2>
+            <ul>
+              <li>HTML, CSS, JavaScript, Node</li>
+              <li>React, Python, Express, SQL</li>
+              <li>Machine Learning, Data Visualization</li>
+            </ul>
+        </div>
+      </section>
+    
+    <section class="contact">
+      <div class="contact-left">
+        <h2>Get in Touch</h2>
+        <p>(555) 555-5555 <br> eiancarter@gmail.com</p>
+      </div>
+      <div class="container-form">  
+          <form id="contact-form" action="" method="post">
+            <h3>Need a Web Developer?</h3>
+            <h4>Fill out the form below for a quote</h4>
+            <fieldset>
+              <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+            </fieldset>
+            <fieldset>
+              <input placeholder="Your Email Address" type="email" tabindex="2" required>
+            </fieldset>
+            <fieldset>
+              <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+            </fieldset>
+            <fieldset>
+              <input placeholder="Your Web Site (optional)" type="url" tabindex="4" required>
+            </fieldset>
+            <fieldset>
+              <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+            </fieldset>
+            <fieldset>
+              <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            </fieldset>
+          </form>
+        </div>
+    </section>
+  </div>  
+  <footer class="links">
+    <a href="#">LinkedIn</a>
+    <a href="#">Instagram</a>
+    <a href="#">Github</a>
+  </footer>
+</div>  
 </body>
 </html>
